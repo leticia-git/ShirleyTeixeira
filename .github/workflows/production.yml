@@ -1,0 +1,18 @@
+on:
+  push:
+    branches: [main]
+name: 💻 Deploy on production
+jobs:
+  web-deploy:
+    name: 🌐 Deploy on production
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📡 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 🔧 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.PRODUCTION_ENVIRONMENT_SERVER }}
+          username: ${{ secrets.PRODUCTION_ENVIRONMENT_USERNAME }}
+          password: ${{ secrets.PRODUCTION_ENVIRONMENT_PASSWORD }}
