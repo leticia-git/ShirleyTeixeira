@@ -15,4 +15,5 @@ jobs:
         with:
           server: ${{ secrets.PRODUCTION_ENVIRONMENT_SERVER }}
           username: ${{ secrets.PRODUCTION_ENVIRONMENT_USERNAME }}
+          local-dir: ${{ secrets.PRODUCTION_ENVIRONMENT_DIR}}
           password: ${{ secrets.PRODUCTION_ENVIRONMENT_PASSWORD }}
