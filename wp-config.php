@@ -29,7 +29,7 @@ define( 'DB_USER', 'db_main_shi' );
 define( 'DB_PASSWORD', 'TLw9L1Zyl52#' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'db_main_shi.mysql.dbaas.com.br' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8' );
