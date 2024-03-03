@@ -33,7 +33,18 @@
 	<header class="header">
 		<div class="grid">
 			<div class="menu">
-
+				<div class="logo">
+					<img src="<?php echo home_url(); ?>/wp-content/themes/shirleyteixeira/assets/images/logo.png" alt="Logo">
+				</div>
+				<div class="links">
+					<a href="">Home</a>
+					<i class="fa-solid fa-star" style="color: #000000;"></i>
+					<a href="">Projetos</a>
+					<i class="fa-solid fa-star" style="color: #000000;"></i>
+					<a href="">Sobre</a>
+					<i class="fa-solid fa-star" style="color: #000000;"></i>
+					<a href="">Contato</a>
+				</div>
 			</div>
 		</div>
 	</header>
