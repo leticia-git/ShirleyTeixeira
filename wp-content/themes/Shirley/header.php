@@ -55,8 +55,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="banner">
-			<h1>CRIAÇÃO DE CONTEÚDO ESCRITO</h1>
-			<h2>Navegue pelo meu portfólio criativo</h2>
+		<div class="grid">
+			<div class="banner">
+				<h1>CRIAÇÃO DE CONTEÚDO ESCRITO</h1>
+				<h2>Navegue pelo meu portfólio criativo</h2>
+			</div>
 		</div>
 	</header>
