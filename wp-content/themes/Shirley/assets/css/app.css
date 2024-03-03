@@ -1002,6 +1002,7 @@ Create a div with class "loading-box" before close </body>. Put a class "loading
 
 html {
   font-family: "Poppins";
+  margin-top: 0px !important;
 }
 
 header {
