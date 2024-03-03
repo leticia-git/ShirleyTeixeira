@@ -19,9 +19,9 @@ get_header(); ?>
                 </div>
             </div>
             <div class="topicos-projetos">
-                <div class="topico">Blog</div>
-                <div class="topico">Newsletter</div>
-                <div class="topico">Redes sociais</div>
+                <div class="topico"><a href="">Blog</a></div>
+                <div class="topico"><a href="">Newsletter</a></div>
+                <div class="topico"><a href="">Redes sociais</a></div>
             </div>
         </div>
 
