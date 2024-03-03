@@ -45,6 +45,18 @@
 					<i class="fa-solid fa-star" style="color: #000000;"></i>
 					<a href="">Contato</a>
 				</div>
+				<div class="redes">
+					<div class="rede">
+						<a href=""></a>
+					</div>
+					<div class="rede">
+						<a href=""></a>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="banner">
+			<h1>CRIAÇÃO DE CONTEÚDO ESCRITO</h1>
+			<h2>Navegue pelo meu portfólio criativo</h2>
 		</div>
 	</header>
