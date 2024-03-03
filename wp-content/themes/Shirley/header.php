@@ -30,6 +30,7 @@
 
 <body class="body">
 	<header class="header">
-		
-	<h1>teste</h1>
+		<div class="grid">
+			
+		</div>
 	</header>
