@@ -1,0 +1,19 @@
+
+@import "base/reset";
+ 
+@import "helpers/helpers";
+@import "helpers/locomotive-scroll";
+
+
+@import "helpers/slick";
+@import "helpers/slick-theme";
+
+@import "pages/home";
+@import "components/home-banners";
+
+@import "components/loading";
+
+
+@import "templates/header";
+@import "templates/footer";
+@import "templates/certificacoes";

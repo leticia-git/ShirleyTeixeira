@@ -1,0 +1,206 @@
+.banner-home {
+    overflow: hidden;
+}
+
+.h-texto-banner {
+    width: 41%;
+    padding-right: 30px;
+    margin-top: 0;
+    padding-top: 80px;
+}
+
+.slide-banner__box {
+    > .slide-banner__item {
+        &:not(:first-child) {
+            display: none; 
+        }
+    }
+}
+
+.slide-banner {
+    position: relative;
+    width: 59%;
+    position: relative;
+    padding-top: 60px;
+
+    
+    &__seta {
+        background: #0068A2;
+        color: #fff;
+        width: 46px;
+        height: 56px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        right: 0;
+        border-radius: 21px;
+        text-align: center;
+        padding-top: 19px;
+        
+        &:hover, &:focus {
+            color: #fff;
+            text-decoration: none;
+            background: darken(#0068A2,5%);
+        }
+    }
+    
+    &__item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 50px;
+        
+        margin-right: 10px;
+        width: 160px;
+        transition: 300ms ease all;
+        &.ativo {
+            width: 383px;
+
+            .slide-banner__txt {
+                font-size: 18px;
+                &::after {
+                    width: 26px;
+                    height: 26px;
+                    background: #076BF2;
+                    position: absolute;
+                    content: " ";
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    z-index: -1;
+                    bottom: 28px;
+                    
+                } 
+                 
+                &[icone="tec"] {
+                    &::after {
+                        transform: translateX(-45px);
+                    }
+                }
+                
+                &[icone="lim"] {
+                    &::after {
+                        transform: translateX(-35px);
+                    }
+                }
+                
+                &[icone="por"] {
+                    &::after {
+                        transform: translateX(-35px);
+                    }
+                }
+                
+                &[icone="out"] {
+                    &::after {
+                        transform: translateX(-65px);
+                    }
+                }
+                
+                &[icone="rec"] {
+                    &::after {
+                        transform: translateX(-45px);
+                    }
+                }
+                
+                &[icone="seg"] {
+                    &::after {
+                        transform: translateX(-45px);
+                    }
+                }
+            }
+
+            
+        }
+    }
+    
+    &__img {
+        display: flex;
+    justify-content: center;
+    align-items: center; 
+        
+    }
+    
+    &__txt {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+}
+
+
+// Versão mobile
+.h-botao-banner-mobile {
+    display: none;
+}
+@media(max-width:991px) {
+    .h-texto-banner {
+        width: 100%;
+        padding-right: 20px;  
+        padding-top: 10px;  
+    }
+    
+    .slide-banner {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+    
+    .banner-home .h-botao-banner {
+        display: none;
+    }
+    
+    .h-botao-banner-mobile {
+        text-align: center;
+        padding-top: 30px;
+        display: block;
+        a {
+            padding: 20px 45px 20px 35px;
+        border-radius: 15px;
+        background: #0068A2;
+        color: #fff;
+        font-family: Poppins;
+            display: inline-block;
+            position: relative;
+            
+            &:hover, &:focus {
+                background: darken(#0068A2,5%);
+            }
+            
+            i {
+                position: absolute;
+                transform: rotate(-30deg);
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+
+
+    .slide-banner__seta {
+        top: 100px;
+    }
+    
+    .slide-banner {
+        &__item {
+            width: 120px;
+            border-radius: 30px;
+            &.ativo {
+                width: 250px;
+            }
+        }
+        
+        &__img {
+            img {
+                width: 250px;
+            }
+        }
+    }
+    
+}

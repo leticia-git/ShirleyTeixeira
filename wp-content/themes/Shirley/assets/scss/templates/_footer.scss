@@ -1,0 +1,306 @@
+.newsletter-form {
+    padding: 22px 140px;
+
+    .texto-news {
+        strong {
+            font-weight: 600;
+        }
+    }
+
+    background: #0068A2;
+    border-radius: 50px;
+    margin: 0 60px;
+    margin-bottom: -80px;
+    color: #fff;
+    overflow: hidden;
+
+    .grid {
+        column-gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .texto-news {
+        width: 50%;
+    }
+
+    .formulario-news {
+        width: 50%;
+    }
+
+    .newsletter-input::placeholder {
+        color: #fff;
+        opacity: 0.7;
+        mix-blend-mode: luminosity;
+    }
+
+    .newsletter-input {
+        padding: 30px 0;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
+    .news-rs {
+        p {
+            display: flex;
+            border-bottom: 1px solid #fff;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.texto-news {
+    p {
+        font-size: 20px;
+        font-weight: 200
+    }
+}
+
+.conteudo-footer {
+    background: #010B1A;
+    color: #fff;
+    padding: 163px 0 150px 0;
+
+    .grid {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.empresa-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicos-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.segmentos-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.topicos-menu-footer {
+    justify-content: space-between;
+    display: flex;
+}
+
+.politicas {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #8D8D8D;
+    font-size: 14px;
+
+    a {
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #0169A3;
+    }
+}
+
+.topicos-menu-footer {
+    column-gap: 34px;
+
+    a {
+        line-height: 30px;
+        font-weight: 400;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #0169A3;
+    }
+}
+
+.links {
+    display: flex;
+
+    a {
+        height: 32px;
+        width: 32px;
+        border-radius: 8px;
+        background: #0068A2;
+        margin: 5px 5px 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #010B1A;
+    }
+}
+
+.fa-brands:before {
+    font-size: 15px;
+    line-height: 0px;
+}
+
+.menu-footer {
+    width: 60%;
+}
+
+.logo-politicas {
+    width: 40%;
+
+    .logo-footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.footer .wpcf7-submit {
+    border-radius: 15px;
+    background: #072434;
+
+    .fa-solid.fa-arrow-right {
+        transform: rotate(-30deg);
+        transition: 300ms ease all;
+    }
+
+    &:hover,
+    &:focus {
+        background: darken(#072434, 10%);
+
+        .fa-solid.fa-arrow-right {
+            transform: rotate(0deg);
+        }
+    }
+
+    height: 44px;
+    width: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+@media(max-width:1024px) {
+
+    .conteudo-footer .grid {
+        padding: 0;
+    }
+
+    .topicos-menu-footer a {
+        font-size: 14px;
+    }
+
+    .footer-mobile .politicas {
+        padding-right: 15px;
+    }
+
+    .newsletter-form {
+        padding: 15px;
+        margin: 0px;
+        border-radius: 0px;
+
+        .texto-news {
+            width: 100%;
+
+            p {
+                font-size: 16px !important;
+            }
+        }
+
+        .grid {
+            flex-direction: column;
+        }
+
+        .formulario-news {
+            width: 100%;
+
+        }
+    }
+
+    .footer-mobile {
+
+        .conteudo-footer {
+            .grid {
+                flex-direction: column;
+            }
+        }
+
+        .logo-politicas {
+            width: 100%;
+        }
+
+        .conteudo-footer {
+            padding: 45px 10px;
+        }
+
+        .logo-footer {
+            img {
+                width: 170px;
+            }
+        }
+
+        .redes {
+            margin: 53px 0
+        }
+
+        .contato-footer {
+            margin-top: 40px;
+        }
+
+        .logo-politicas {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 30px;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .politicas {
+            font-size: 12.474px;
+            text-align: left;
+        }
+    }
+
+    .footer .wpcf7-submit {
+        border-radius: 15px;
+        background: #072434;
+        height: 44px;
+        width: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-left: -50px;
+    }
+
+}
+
+@media(max-width:1024px) {
+    .footer-desk {
+        display: none;
+    }
+}
+
+@media(min-width:1024px) {
+    .footer-mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+    .menu-footer .contato-footer {
+        white-space: nowrap;
+    }
+}

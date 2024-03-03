@@ -1,0 +1,1371 @@
+@charset "UTF-8";
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.h-show {
+  display: flex;
+}
+
+.h-hide {
+  display: none;
+}
+
+.h-appears-on-mobile {
+  display: none;
+}
+@media (max-width: 61.9375rem) {
+  .h-appears-on-mobile {
+    display: flex;
+  }
+}
+
+html.has-scroll-smooth {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+/* Icons */
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+[dir=rtl] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+.slick-prev:before {
+  content: "←";
+}
+
+[dir=rtl] .slick-prev:before {
+  content: "→";
+}
+
+.slick-next {
+  right: -25px;
+}
+
+[dir=rtl] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+.slick-next:before {
+  content: "→";
+}
+
+[dir=rtl] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: black;
+}
+
+.banner-home {
+  overflow: hidden;
+}
+
+.h-texto-banner {
+  width: 41%;
+  padding-right: 30px;
+  margin-top: 0;
+  padding-top: 80px;
+}
+
+.slide-banner__box > .slide-banner__item:not(:first-child) {
+  display: none;
+}
+
+.slide-banner {
+  position: relative;
+  width: 59%;
+  position: relative;
+  padding-top: 60px;
+}
+.slide-banner__seta {
+  background: #0068A2;
+  color: #fff;
+  width: 46px;
+  height: 56px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 0;
+  border-radius: 21px;
+  text-align: center;
+  padding-top: 19px;
+}
+.slide-banner__seta:hover, .slide-banner__seta:focus {
+  color: #fff;
+  text-decoration: none;
+  background: #005889;
+}
+.slide-banner__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  margin-right: 10px;
+  width: 160px;
+  transition: 300ms ease all;
+}
+.slide-banner__item.ativo {
+  width: 383px;
+}
+.slide-banner__item.ativo .slide-banner__txt {
+  font-size: 18px;
+}
+.slide-banner__item.ativo .slide-banner__txt::after {
+  width: 26px;
+  height: 26px;
+  background: #076BF2;
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  z-index: -1;
+  bottom: 28px;
+}
+.slide-banner__item.ativo .slide-banner__txt[icone=tec]::after {
+  transform: translateX(-45px);
+}
+.slide-banner__item.ativo .slide-banner__txt[icone=lim]::after {
+  transform: translateX(-35px);
+}
+.slide-banner__item.ativo .slide-banner__txt[icone=por]::after {
+  transform: translateX(-35px);
+}
+.slide-banner__item.ativo .slide-banner__txt[icone=out]::after {
+  transform: translateX(-65px);
+}
+.slide-banner__item.ativo .slide-banner__txt[icone=rec]::after {
+  transform: translateX(-45px);
+}
+.slide-banner__item.ativo .slide-banner__txt[icone=seg]::after {
+  transform: translateX(-45px);
+}
+.slide-banner__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-banner__txt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+.h-botao-banner-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .h-texto-banner {
+    width: 100%;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+  .slide-banner {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+  .banner-home .h-botao-banner {
+    display: none;
+  }
+  .h-botao-banner-mobile {
+    text-align: center;
+    padding-top: 30px;
+    display: block;
+  }
+  .h-botao-banner-mobile a {
+    padding: 20px 45px 20px 35px;
+    border-radius: 15px;
+    background: #0068A2;
+    color: #fff;
+    font-family: Poppins;
+    display: inline-block;
+    position: relative;
+  }
+  .h-botao-banner-mobile a:hover, .h-botao-banner-mobile a:focus {
+    background: #005889;
+  }
+  .h-botao-banner-mobile a i {
+    position: absolute;
+    transform: rotate(-30deg);
+    top: 20px;
+    right: 20px;
+  }
+  .slide-banner__seta {
+    top: 100px;
+  }
+  .slide-banner__item {
+    width: 120px;
+    border-radius: 30px;
+  }
+  .slide-banner__item.ativo {
+    width: 250px;
+  }
+  .slide-banner__img img {
+    width: 250px;
+  }
+}
+/*
+----------------------------------------
+Welcome to Rly Simple Loading CSS
+----------------------------------------
+### The key is the class "loading" ###
+put the class "loading" on a div to create a local loading on a especific section.
+Using loading on entire screen:
+Create a div with class "loading-box" before close </body>. Put a class "loading" on this section
+*/
+/*Define loading*/
+.loading {
+  position: relative;
+}
+.loading:hover {
+  cursor: wait;
+}
+
+/*Background color*/
+.loading:after {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  content: " ";
+  min-height: 60px;
+}
+
+/*Loading Basic Animation*/
+.loading:before {
+  content: " ";
+  position: absolute;
+  /*size*/
+  width: 36px;
+  height: 36px;
+  /*Position*/
+  left: 50%;
+  top: 48%;
+  z-index: 1200;
+}
+
+/*Define full screen loading*/
+.loading-box.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/*Circle Loading Animation*/
+@keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-moz-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-o-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-ms-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.loading:before {
+  border: 5px solid #0068A2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border-top-color: transparent;
+  margin-top: 10px;
+  -webkit-animation: lds-rolling 1s linear infinite;
+  -moz-animation: lds-rolling 1s linear infinite;
+  -o-animation: lds-rolling 1s linear infinite;
+  -ms-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+}
+
+.loading-box.loading:hover {
+  cursor: wait;
+}
+.loading-box.loading:before {
+  border: 10px solid #0068A2;
+  border-top-color: transparent;
+  width: 60px;
+  height: 60px;
+}
+.loading-box.loading .loading-msg {
+  position: absolute;
+  z-index: 1005;
+  left: 30px;
+  right: 30px;
+  text-align: center;
+  top: 58%;
+  font-size: 18px;
+  color: #666;
+}
+
+[personalizado-id=anuncio].loading:after {
+  content: "Redirecionando...";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 12px;
+  padding-top: 75px;
+}
+
+.grid {
+  max-width: 1260px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.newsletter-form {
+  padding: 22px 140px;
+  background: #0068A2;
+  border-radius: 50px;
+  margin: 0 60px;
+  margin-bottom: -80px;
+  color: #fff;
+  overflow: hidden;
+}
+.newsletter-form .texto-news strong {
+  font-weight: 600;
+}
+.newsletter-form .grid {
+  column-gap: 15px;
+  display: flex;
+  align-items: center;
+}
+.newsletter-form .texto-news {
+  width: 50%;
+}
+.newsletter-form .formulario-news {
+  width: 50%;
+}
+.newsletter-form .newsletter-input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+  mix-blend-mode: luminosity;
+}
+.newsletter-form .newsletter-input {
+  padding: 30px 0;
+}
+.newsletter-form .newsletter-input:focus {
+  outline: none;
+}
+.newsletter-form .news-rs p {
+  display: flex;
+  border-bottom: 1px solid #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-news p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.conteudo-footer {
+  background: #010B1A;
+  color: #fff;
+  padding: 163px 0 150px 0;
+}
+.conteudo-footer .grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.empresa-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicos-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.segmentos-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topicos-menu-footer {
+  justify-content: space-between;
+  display: flex;
+}
+
+.politicas {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: #8D8D8D;
+  font-size: 14px;
+}
+.politicas a {
+  margin: 5px 0;
+  transition: 0.3s;
+}
+.politicas a:hover {
+  color: #0169A3;
+}
+
+.topicos-menu-footer {
+  column-gap: 34px;
+}
+.topicos-menu-footer a {
+  line-height: 30px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.topicos-menu-footer a:hover {
+  color: #0169A3;
+}
+
+.links {
+  display: flex;
+}
+.links a {
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+  background: #0068A2;
+  margin: 5px 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.links a:hover {
+  color: #010B1A;
+}
+
+.fa-brands:before {
+  font-size: 15px;
+  line-height: 0px;
+}
+
+.menu-footer {
+  width: 60%;
+}
+
+.logo-politicas {
+  width: 40%;
+}
+.logo-politicas .logo-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer .wpcf7-submit {
+  border-radius: 15px;
+  background: #072434;
+  height: 44px;
+  width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .wpcf7-submit .fa-solid.fa-arrow-right {
+  transform: rotate(-30deg);
+  transition: 300ms ease all;
+}
+.footer .wpcf7-submit:hover, .footer .wpcf7-submit:focus {
+  background: #010507;
+}
+.footer .wpcf7-submit:hover .fa-solid.fa-arrow-right, .footer .wpcf7-submit:focus .fa-solid.fa-arrow-right {
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1024px) {
+  .conteudo-footer .grid {
+    padding: 0;
+  }
+  .topicos-menu-footer a {
+    font-size: 14px;
+  }
+  .footer-mobile .politicas {
+    padding-right: 15px;
+  }
+  .newsletter-form {
+    padding: 15px;
+    margin: 0px;
+    border-radius: 0px;
+  }
+  .newsletter-form .texto-news {
+    width: 100%;
+  }
+  .newsletter-form .texto-news p {
+    font-size: 16px !important;
+  }
+  .newsletter-form .grid {
+    flex-direction: column;
+  }
+  .newsletter-form .formulario-news {
+    width: 100%;
+  }
+  .footer-mobile .conteudo-footer .grid {
+    flex-direction: column;
+  }
+  .footer-mobile .logo-politicas {
+    width: 100%;
+  }
+  .footer-mobile .conteudo-footer {
+    padding: 45px 10px;
+  }
+  .footer-mobile .logo-footer img {
+    width: 170px;
+  }
+  .footer-mobile .redes {
+    margin: 53px 0;
+  }
+  .footer-mobile .contato-footer {
+    margin-top: 40px;
+  }
+  .footer-mobile .logo-politicas {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .footer-mobile .politicas {
+    font-size: 12.474px;
+    text-align: left;
+  }
+  .footer .wpcf7-submit {
+    border-radius: 15px;
+    background: #072434;
+    height: 44px;
+    width: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: -50px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer-desk {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-mobile {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .menu-footer .contato-footer {
+    white-space: nowrap;
+  }
+}
+.certificacoes .container {
+  display: flex;
+  justify-content: space-between;
+}
+.certificacoes .block {
+  width: 30%;
+  height: 187px;
+  border-radius: 15px;
+  background: #031835;
+  color: #fff;
+  transition: width 0.3s ease;
+  position: relative;
+  padding: 15px;
+  margin-right: 5px;
+}
+.certificacoes .block .content {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.certificacoes .block.expanded {
+  width: 100%;
+}
+.certificacoes .block.expanded .content {
+  visibility: visible;
+}
+.certificacoes #block3.expanded {
+  width: 300px;
+}
+.certificacoes .titulo-componente p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -0.42px;
+}
+.certificacoes .content p {
+  font-family: Poppins;
+  font-size: 14px;
+}
+.certificacoes .block img {
+  margin-top: 15px;
+}
+
+.certificacoes-home {
+  position: relative;
+  padding-top: 75px;
+}
+.certificacoes-home .titulo p {
+  margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .certificacoes-home {
+    padding-top: 30px;
+  }
+}
+.certificacoes-home .fundo-cert {
+  left: 0;
+}
+
+@media (max-width: 1024px) {
+  .certificacoes {
+    display: none;
+  }
+  .certificacoes-mobile .conteudo-cert {
+    border-radius: 9.615px;
+    background: #031835;
+    padding: 30px 20px;
+    color: #fff;
+    display: flex;
+    margin: 15px;
+    font-size: 15px;
+  }
+  .certificacoes-mobile .titulo-cert {
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .certificacoes-mobile .texto-cert {
+    margin-left: 20px;
+    width: 85%;
+  }
+  .certificacoes-mobile .imagem-cert {
+    width: 15%;
+  }
+}
+@media (min-width: 1024px) {
+  .certificacoes-mobile {
+    display: none;
+  }
+}
+.certificacoes-mobile-titulo {
+  font-size: 24px;
+  color: #010B1A;
+  padding: 0 20px;
+  font-weight: 300;
+}
+
+@media (min-width: 991px) {
+  .certificacoes .block .content {
+    overflow: hidden;
+  }
+  .certificacoes .block .content p {
+    opacity: 0;
+    transition: 300ms ease all;
+    min-width: 360px;
+  }
+  .certificacoes .block.expanded .content p {
+    opacity: 1;
+  }
+}
+.expanded .content p {
+  margin-left: 30px;
+}
+
+/*# sourceMappingURL=app.css.map */

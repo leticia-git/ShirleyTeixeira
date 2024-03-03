@@ -1,0 +1,200 @@
+/*
+----------------------------------------
+Welcome to Rly Simple Loading CSS
+----------------------------------------
+### The key is the class "loading" ###
+put the class "loading" on a div to create a local loading on a especific section.
+Using loading on entire screen:
+Create a div with class "loading-box" before close </body>. Put a class "loading" on this section
+*/
+
+
+
+/*Define loading*/
+.loading {
+  position: relative;
+  &:hover {
+    cursor: wait;
+  }
+}
+
+/*Background color*/
+.loading:after {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  content: " ";
+  min-height: 60px;
+}
+
+/*Loading Basic Animation*/
+.loading:before {
+  content: " ";
+  position: absolute;
+
+  /*size*/
+  width: 36px;
+  height: 36px;
+
+  /*Position*/
+  left: 50%;
+  top: 48%;
+  z-index: 1200;
+}
+
+
+
+/*Define full screen loading*/
+
+.loading-box.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
+/*Circle Loading Animation*/
+
+@keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-moz-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-o-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-ms-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.loading:before {
+  border: 5px solid #0068A2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border-top-color: transparent;
+  margin-top: 10px;
+  -webkit-animation: lds-rolling 1s linear infinite;
+  -moz-animation: lds-rolling 1s linear infinite;
+  -o-animation: lds-rolling 1s linear infinite;
+  -ms-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+}
+
+
+
+.loading-box.loading {
+    &:hover {
+        cursor: wait;
+    }
+    
+    &:before {
+        border: 10px solid #0068A2;
+        border-top-color: transparent; 
+        width: 60px;
+        height: 60px;
+    }
+    // display: none;
+    
+    .loading-msg {
+        position: absolute;
+        z-index: 1005;
+        left: 30px;
+        right: 30px;
+        text-align: center;
+        top: 58%;
+        font-size: 18px;
+        color: #666;
+    }
+}
+
+
+// Loadings específicos
+[personalizado-id="anuncio"].loading {
+  &:after {
+      content: "Redirecionando...";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 12px;
+      padding-top: 75px;
+  }
+}

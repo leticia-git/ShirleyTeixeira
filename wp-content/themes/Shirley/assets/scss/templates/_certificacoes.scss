@@ -1,0 +1,150 @@
+.certificacoes {
+    .container {
+        display: flex;
+    justify-content: space-between;
+    }
+    .block {
+        width: 30%;
+        height: 187px;
+        border-radius: 15px;
+        background: #031835;
+        color: #fff;
+        transition: width 0.3s ease;
+        position: relative;
+        padding: 15px;
+        margin-right: 5px;
+        .content {
+            // display: none;
+            visibility: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+    .block.expanded {
+        width: 100%;
+
+        .content {
+            visibility: visible;
+            // display: block;
+        }
+    }
+
+
+    #block3.expanded {
+        width: 300px;
+    }
+
+    .titulo-componente {
+        p {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 20px;
+            letter-spacing: -0.42px;
+        }
+    }
+
+    .content {
+        p {
+            font-family: Poppins;
+            font-size: 14px;
+        }
+    }
+
+    .block {
+        img {
+            margin-top: 15px;
+        }
+    }
+}
+
+
+.certificacoes-home {
+    position: relative;
+    // padding-top: 260px;
+    padding-top: 75px;
+
+    .titulo p {
+        margin-bottom: 40px;
+    }
+
+    
+    @media(max-width: 991px) {
+        padding-top: 30px;
+    }
+
+
+    .fundo-cert {
+        left: 0;
+    }
+}
+
+@media(max-width:1024px) {
+    .certificacoes {
+        display: none;
+    }
+
+    .certificacoes-mobile {
+        .conteudo-cert {
+            border-radius: 9.615px;
+            background: #031835;
+            padding: 30px 20px;
+            color: #fff;
+            display: flex;
+            margin: 15px;
+            font-size: 15px;
+        }
+
+        .titulo-cert {
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .texto-cert {
+            margin-left: 20px;
+            width: 85%;
+        }
+
+        .imagem-cert {
+            width: 15%;
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .certificacoes-mobile {
+        display: none;
+    }
+
+}
+
+.certificacoes-mobile-titulo {
+    font-size: 24px;
+    color: #010B1A;
+    padding: 0 20px;
+    font-weight: 300;
+}
+
+@media(min-width:991px) {
+    .certificacoes .block .content {
+        overflow: hidden;
+    }
+    
+    .certificacoes .block .content p {
+        opacity: 0;
+        transition: 300ms ease all;
+        min-width: 360px;
+    }
+    
+    .certificacoes .block.expanded .content p {
+        opacity: 1;
+    }
+}
+
+.expanded .content p {
+    margin-left: 30px;
+}
