@@ -1000,6 +1000,10 @@ Create a div with class "loading-box" before close </body>. Put a class "loading
   padding-top: 75px;
 }
 
+html {
+  font-family: "Poppins";
+}
+
 .grid {
   max-width: 1260px;
   width: 100%;
@@ -1011,6 +1015,10 @@ Create a div with class "loading-box" before close </body>. Put a class "loading
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.menu .conteudo-menu {
+  display: flex;
+  column-gap: 20px;
 }
 .menu .links {
   display: flex;
