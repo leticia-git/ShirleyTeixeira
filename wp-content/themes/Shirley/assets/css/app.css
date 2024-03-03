@@ -670,6 +670,16 @@ html.has-scroll-smooth {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+.dois {
+  background: #F5D7B3;
+}
+
+.titulo-sobremim p {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
 .banner-home {
   overflow: hidden;
 }

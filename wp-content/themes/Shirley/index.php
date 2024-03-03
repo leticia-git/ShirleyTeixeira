@@ -40,6 +40,34 @@
         <div class="titulo-sobremim">
             <p>SOBRE MIM</p>
         </div>
+        <div class="sobremim">
+            <div class="conteudo-sobre">
+                <div class="foto">
+                    
+                </div>
+                <div class="texto-sobre">
+
+                </div>
+            </div>
+            <div class="contato-sobre">
+                    <div class="titulo-contatosobre">
+                    <p>CONTATO</p>
+                    </div>
+                    <div class="telsobre">
+                        <a href="">(11) 96253-8168</a>
+                    </div>
+                    <div class="email-sobre">
+                        <a href="">shiteixeiras@gmail.com</a>
+                    </div>
+                    <div class="botao-cv">
+                        <a href="">	
+                            <i class="fa-solid fa-star" style="color: #000000;"></i>
+                            <span>Baixe meu CV</span>
+                            <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        </a>
+                    </div>
+            </div>
+        </div>
     </div>
 </section>
 
