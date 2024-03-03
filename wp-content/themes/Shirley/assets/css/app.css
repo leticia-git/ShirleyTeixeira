@@ -1007,6 +1007,28 @@ Create a div with class "loading-box" before close </body>. Put a class "loading
   margin: 0 auto;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .links {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.menu .links a {
+  text-decoration: none;
+}
+.menu .links .fa-star {
+  font-size: 14px;
+}
+.menu .redes {
+  display: flex;
+  column-gap: 20px;
+  font-size: 24px;
+}
+
 .certificacoes .container {
   display: flex;
   justify-content: space-between;
