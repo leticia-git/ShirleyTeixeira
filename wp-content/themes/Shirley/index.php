@@ -35,5 +35,12 @@
 
     </div>
 </section>
+<section class="dois">
+    <div class="grid">
+        <div class="titulo-sobremim">
+            <p>SOBRE MIM</p>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
