@@ -34,7 +34,7 @@
 		<div class="grid">
 			<div class="menu">
 				<div class="logo">
-					<img src="<?php echo home_url(); ?>/wp-content/themes/shirleyteixeira/assets/images/logo.png" alt="Logo">
+					<img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/logo.png" alt="Logo">
 				</div>
 				<div class="links">
 					<a href="">Home</a>
