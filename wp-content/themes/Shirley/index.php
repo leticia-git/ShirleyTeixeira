@@ -15,9 +15,21 @@
                 </div>
             </div>
             <div class="topicos-projetos">
-                <div class="topico"><a href="">Blog</a></div>
-                <div class="topico"><a href="">Newsletter</a></div>
-                <div class="topico"><a href="">Redes sociais</a></div>
+                <div class="topico">
+                <a href="">
+                    <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/blog.png" alt="">
+                </a>
+                </div>
+                <div class="topico">
+                <a href="">
+                    <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/newss.png" alt="">
+                </a>
+                </div>
+                <div class="topico">
+                <a href="">
+                    <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/redes.png" alt="">
+                </a>
+                </div>
             </div>
         </div>
 
