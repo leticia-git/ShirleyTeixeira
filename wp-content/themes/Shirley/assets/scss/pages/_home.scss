@@ -75,8 +75,8 @@
   }
   }
   .conteudo-contato {
-      
-      display: flex;
+    display: flex;
+    justify-content: space-between;
       .box-contato {
           background: #fff;
           padding: 20px;
@@ -117,3 +117,47 @@
   margin: 65px 0;
 }
 
+
+.botao-cv a {
+  text-decoration: none;
+  background: #DD90AE;
+  padding: 20px 150px;
+  color: #fff;
+  font-weight: 600;
+   font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 24px;
+  border-radius: 20px;
+}
+.botao-cv{
+width: 100%;  
+}
+.tres {
+  padding: 100px 0;
+}
+.form{
+  width: 50%;
+  background: #EEAD42;
+  padding: 25px;
+  border-radius: 0 30px;
+  input[type="text" i] {
+      background: #ECDCC0;
+      height: 50px;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+  }
+  textarea{
+  background: #ECDCC0;
+      width: 100%;
+  }
+  .wpcf7-submit {
+      margin-top: 10px;
+      text-align: center;
+      background: #C14B27;
+      border-radius: 50px;
+      font-size: 32px;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+  }
+}
