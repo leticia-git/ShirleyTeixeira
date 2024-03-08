@@ -8,10 +8,31 @@
   .dois {
     background: #F5D7B3;
 }
-
+.projetos{
+  display: flex;
+  column-gap: 50px;
+  padding: 80px 0;
+}
+.topicos-projetos {
+    display: flex;
+  column-gap: 20px;
+}
   
 .titulo-sobremim p {
        font-size: 32px;
     font-weight: bold;
      font-family: "Be Vietnam Pro", sans-serif; 
+}
+.textos-projeto {
+  background: #fff;
+  border-radius: 0px 30px 0px 30px;
+  padding: 20px;
+}
+.projetos-texto p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.projetos-titulo p {
+  color: #355C3C;
 }
