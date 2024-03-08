@@ -32,7 +32,10 @@
 
 <body class="body">
 	<header class="header" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo.png');background-repeat:no-repeat; background-size:cover">
-		<div class="grid">
+		<div class="flor-rosa">
+			<img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/florrosa.png" alt="Flor">
+		</div>
+	<div class="grid">
 			<div class="menu">
 				<div class="logo">
 					<img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/logo.png" alt="Logo">
@@ -40,11 +43,11 @@
 				<div class="conteudo-menu">
 					<div class="links">
 						<a href="">Home</a>
-						<i class="fa-solid fa-star" style="color: #000000;"></i>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
 						<a href="">Projetos</a>
-						<i class="fa-solid fa-star" style="color: #000000;"></i>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
 						<a href="">Sobre</a>
-						<i class="fa-solid fa-star" style="color: #000000;"></i>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
 						<a href="">Contato</a>
 					</div>
 					<div class="redes">
