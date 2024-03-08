@@ -17,6 +17,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: uppercase;
   .conteudo-menu{
     display: flex;
     column-gap: 20px;
@@ -26,6 +27,7 @@ header{
       column-gap: 10px;
   align-items: center;
       a{
+        color: #ECDCC0;
           text-decoration: none;
       }
       .fa-star {
@@ -36,22 +38,27 @@ header{
       display: flex;
       column-gap: 20px;
       font-size: 24px;
+      color: #ECDCC0;
   }
 }
 
 .banner{
   margin-top: 150px;
   h1 {
-  font-size: 42px;
-  font-family: Poppins;
+  font-size: 65px;
+  font-family: "Fascinate", system-ui;
   font-weight: bold;
   text-align: center;
+  text-align: left;
+  width: 50%;
   margin-bottom: 15px;
+  color: #EEAD42;
 }
 h2 {
   font-size: 32px;
- font-family: "Be Vietnam Pro", sans-serif;
+ font-family: "Poppins", sans-serif;
   text-align: center;
+  color: #ECDCC0;
 }
 }
 .projetos{

@@ -1038,6 +1038,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: uppercase;
 }
 .menu .conteudo-menu {
   display: flex;
@@ -1049,6 +1050,7 @@ header {
   align-items: center;
 }
 .menu .links a {
+  color: #ECDCC0;
   text-decoration: none;
 }
 .menu .links .fa-star {
@@ -1058,22 +1060,27 @@ header {
   display: flex;
   column-gap: 20px;
   font-size: 24px;
+  color: #ECDCC0;
 }
 
 .banner {
   margin-top: 150px;
 }
 .banner h1 {
-  font-size: 42px;
-  font-family: Poppins;
+  font-size: 65px;
+  font-family: "Fascinate", system-ui;
   font-weight: bold;
   text-align: center;
+  text-align: left;
+  width: 50%;
   margin-bottom: 15px;
+  color: #EEAD42;
 }
 .banner h2 {
   font-size: 32px;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
+  color: #ECDCC0;
 }
 
 .projetos {
