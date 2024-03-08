@@ -822,6 +822,14 @@ html.has-scroll-smooth {
   font-weight: 600;
   width: 100%;
 }
+.form textarea {
+  height: 195px;
+}
+
+.flores {
+  display: flex;
+  justify-content: center;
+}
 
 .banner-home {
   overflow: hidden;
