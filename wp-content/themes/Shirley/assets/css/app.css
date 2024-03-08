@@ -731,6 +731,50 @@ html.has-scroll-smooth {
   letter-spacing: 3px;
 }
 
+.tres {
+  background: #355C3C;
+}
+.tres .contato .titulo-contato p {
+  color: #EEAD42;
+  font-size: 32px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.tres .conteudo-contato {
+  display: flex;
+}
+.tres .conteudo-contato .box-contato {
+  background: #fff;
+  padding: 20px;
+  border-radius: 30px 0;
+}
+.tres .conteudo-contato .box-contato .titulo-box p {
+  font-size: 32px;
+  color: #355C3C;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.tres .conteudo-contato .box-contato .telefone {
+  margin-bottom: 10px;
+}
+.tres .conteudo-contato .box-contato .telefone a {
+  font-size: 24px;
+  text-decoration: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.tres .conteudo-contato .box-contato .email a {
+  font-size: 24px;
+  text-decoration: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.flores {
+  margin: 65px 0;
+}
+
 .banner-home {
   overflow: hidden;
 }

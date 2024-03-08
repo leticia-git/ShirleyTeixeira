@@ -53,12 +53,13 @@
 </section>
 <section class="tres">
     <div class="grid">
-        <div class="titulo-contato">
-            <p>ENTRE EM CONTATO COMIGO</p>
-        </div>
+
         <div class="conteudo-contato">
 
             <div class="contato">
+            <div class="titulo-contato">
+            <p>ENTRE EM CONTATO COMIGO</p>
+        </div>
                 <div class="box-contato">
                         <div class="titulo-box">
                             <p>CONTATO</p>
