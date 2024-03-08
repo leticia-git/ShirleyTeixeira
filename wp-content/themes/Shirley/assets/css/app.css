@@ -1245,6 +1245,10 @@ header {
   color: #ECDCC0;
 }
 
+footer {
+  padding: 50px 0;
+}
+
 .certificacoes .container {
   display: flex;
   justify-content: space-between;
