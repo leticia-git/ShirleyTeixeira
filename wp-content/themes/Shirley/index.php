@@ -51,5 +51,42 @@
         </div>
     </div>
 </section>
+<section class="tres">
+    <div class="grid">
+        <div class="titulo-contato">
+            <p>ENTRE EM CONTATO COMIGO</p>
+        </div>
+        <div class="conteudo-contato">
+
+            <div class="contato">
+                <div class="box-contato">
+                        <div class="titulo-box">
+                            <p>CONTATO</p>
+                        </div>
+                        <div class="telefone">
+                            <a href="tel:+5511962538168">(11) 96253-8168</a>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:shiteixeiras@gmail.com">shiteixeiras@gmail.com</a>
+                        </div>
+                </div>
+                <div class="flores">
+                    <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/flores.png" alt="">
+                </div>
+                <div class="botao-cv">
+                    <a href="">
+                    <i class="fa-solid fa-star" style="color: #fff;"></i>
+                    BAIXE MEU CV
+                    <i class="fa-solid fa-star" style="color: #fff;"></i>
+                    </a>
+                </div>
+            </div>
+           <div class="form">
+           <?php echo do_shortcode('[contact-form-7 id="f28e2d9" title="Formulário de contato"]'); ?>
+
+           </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
