@@ -38,18 +38,7 @@
             <p>SOBRE MIM</p>
         </div>
         <div class="sobremim">
-            <div class="conteudo-sobre">
-                <div class="foto">
-                    
-                </div>
-                <div class="texto-sobre">
-
-                </div>
-            </div>
             <div class="contato-sobre">
-                    <div class="titulo-contatosobre">
-                    <p>CONTATO</p>
-                    </div>
                     <div class="conteudo-sobre">
                         <div class="foto">
                             <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/shi.png" alt="Foto">
