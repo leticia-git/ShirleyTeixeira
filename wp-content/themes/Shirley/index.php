@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="um" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo-projetos.png');background-repeat:no-repeat; background-size:cover">
+<section class="um" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo-projetos.png');background-repeat:no-repeat; background-size:cover;background-position:center;">
     <div class="grid">
         <div class="projetos">
             <div class="textos-projeto">
@@ -32,7 +32,7 @@
 
     </div>
 </section>
-<section class="dois" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo-sobre.png');background-repeat:no-repeat; background-size:cover">
+<section class="dois" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo-sobre.png');background-repeat:no-repeat; background-size:cover; background-position:center;">
     <div class="grid">
         <div class="titulo-sobremim">
             <p>SOBRE MIM</p>

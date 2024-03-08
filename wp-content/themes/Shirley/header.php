@@ -33,7 +33,7 @@
 
 
 <body class="body">
-	<header class="header" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo.png');background-repeat:no-repeat; background-size:cover">
+	<header class="header" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo.png');background-repeat:no-repeat; background-size:cover;background-position:center;">
 	<div class="grid">
 			<div class="menu">
 				<div class="logo">
