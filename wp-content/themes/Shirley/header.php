@@ -41,13 +41,13 @@
 				</div>
 				<div class="conteudo-menu">
 					<div class="links">
-						<a href="">Home</a>
+						<a href="">HOME</a>
 						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="">Projetos</a>
+						<a href="">PROJETOS</a>
 						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="">Sobre</a>
+						<a href="">SOBRE</a>
 						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="">Contato</a>
+						<a href="">CONTATO</a>
 					</div>
 					<div class="redes">
 						<div class="rede">

@@ -1081,6 +1081,7 @@ header {
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: #ECDCC0;
+  text-align: left;
 }
 
 .projetos {
@@ -1092,6 +1093,10 @@ header {
 .topicos-projetos {
   display: flex;
   column-gap: 10px;
+}
+
+.fa-brands {
+  color: #ECDCC0;
 }
 
 .certificacoes .container {
