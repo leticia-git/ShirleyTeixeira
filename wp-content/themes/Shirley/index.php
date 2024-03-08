@@ -32,7 +32,7 @@
 
     </div>
 </section>
-<section class="dois">
+<section class="dois" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo-sobre.png');background-repeat:no-repeat; background-size:cover">
     <div class="grid">
         <div class="titulo-sobremim">
             <p>SOBRE MIM</p>
