@@ -1024,7 +1024,7 @@ html {
 
 header {
   background-color: #FEF0E6;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
 }
 
 .grid {
@@ -1085,6 +1085,8 @@ header {
   text-align: center;
   color: #ECDCC0;
   text-align: left;
+  font-weight: 600;
+  margin-top: 30px;
 }
 
 .projetos {
