@@ -824,6 +824,7 @@ html.has-scroll-smooth {
 }
 .form textarea {
   height: 195px;
+  padding: 10px;
 }
 
 .flores {
