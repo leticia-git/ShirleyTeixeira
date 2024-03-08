@@ -50,18 +50,13 @@
                     <div class="titulo-contatosobre">
                     <p>CONTATO</p>
                     </div>
-                    <div class="telsobre">
-                        <a href="">(11) 96253-8168</a>
-                    </div>
-                    <div class="email-sobre">
-                        <a href="">shiteixeiras@gmail.com</a>
-                    </div>
-                    <div class="botao-cv">
-                        <a href="">	
-                            <i class="fa-solid fa-star" style="color: #000000;"></i>
-                            <span>Baixe meu CV</span>
-                            <i class="fa-solid fa-star" style="color: #000000;"></i>
-                        </a>
+                    <div class="conteudo-sobre">
+                        <div class="foto">
+                            <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/shi.png" alt="Foto">
+                        </div>
+                        <div class="texto-sobre">
+                            <p>Olá, sou a <strong>Shirley</strong>, redatora, publicitária e comunicadora visual. Tenho experiência em controle de qualidade e criação de textos para e-commerce com foco em SEO. Desenvolvi meu hábito de escrita ainda na infância com meus diários e aprimorei essa habilidade durante a graduação. Sou apaixonada por literatura, escrita criativa, pintura, ilustração, design e tudo que engloba o mundo das artes.</p>
+                        </div>
                     </div>
             </div>
         </div>
