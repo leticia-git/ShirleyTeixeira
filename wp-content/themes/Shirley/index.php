@@ -8,10 +8,7 @@
                     <p>PROJETOS</p>
                 </div>
                 <div class="projetos-texto">
-                    <p>Navegue pelo meu portfólio criativo Navegue pelo meu portfólio
-                        criativoNavegue pelo meu portfólio criativoNavegue pelo meu portfólio
-                        criativoNavegue pelo meu portfólio criativoNavegue pelo meu portfólio
-                        criativoNavegue pelo meu portfólio criativo</p>
+                    <p>Escrever é uma paixão de longa data. Aqui você encontra textos pessoais, criativos e projetos de social media.</p>
                 </div>
             </div>
             <div class="topicos-projetos">
