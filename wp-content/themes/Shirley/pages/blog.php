@@ -17,7 +17,32 @@ Template Name:Blog
 </head>
 <body>
     <header>
-        <!-- Add your header content here -->
+    <div class="grid">
+			<div class="menu">
+				<div class="logo">
+					<img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/logo.png" alt="Logo">
+				</div>
+				<div class="conteudo-menu">
+					<div class="links">
+						<a href="">HOME</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						<a href="#projetos">PROJETOS</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						<a href="#sobre">SOBRE</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						<a href="#contato">CONTATO</a>
+					</div>
+					<div class="redes">
+						<div class="rede">
+							<a href=""><i class="fa-brands fa-linkedin"></i></a>
+						</div>
+						<div class="rede">
+							<a href=""><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </header>
 
     <div class="container">
@@ -36,11 +61,6 @@ Template Name:Blog
             <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
     </div>
-
-    <footer>
-        <!-- Add your footer content here -->
-    </footer>
-
     <?php wp_footer(); ?>
 </body>
 </html>
