@@ -1,44 +1,31 @@
-<?php
-/*
-Template Name: Post
-*/
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php the_title(); ?></title>
-    <?php wp_head(); ?>
-    <style>
-        /* Add your custom CSS styles here */
-    </style>
-</head>
-<body>
-    <header>
-        <!-- Add your header content here -->
-    </header>
-
-    <div class="container">
-        <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>
-                <article <?php post_class(); ?>>
-                    <h1><?php the_title(); ?></h1>
-                    <div class="post-content">
-                        <?php the_content(); ?>
-                    </div>
-                </article>
-            <?php endwhile; ?>
-        <?php else : ?>
-            <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
-        <?php endif; ?>
+<main class="p-single">
+    <div class="p-single__grid" >
+        <?php if (has_post_thumbnail()) { ?>
+            <div class="p-single__thumbnail swiper-slide" style="background-image: url('<?php the_post_thumbnail_url('thumbnail-blog-highlights') ?>')" >
+                <div class="p-single__titles" >
+                    <h1 class="p-single__title" ><?php the_title(); ?></h1>
+                </div>
+                <div class="p-single__author-date" >
+                    <span class="p-single__author" ><?php the_author(); ?></span>
+                    <span >-</span>
+                    <span class="p-single__data" ><?php echo get_the_date('d'); ?> <?php echo get_the_date('F'); ?> <?php echo get_the_date('Y'); ?></span>
+                </div>
+            </div>
+        <?php } else { ?>
+            <div class="p-single__thumbnail swiper-slide" style="background-color: #00306A" >
+                <div class="p-single__titles" >
+                    <h1 class="p-single__title" ><?php the_title(); ?></h1>
+                    <span class="p-single__subtitle" ></span>
+                </div>
+                <div class="p-single__author-date" >
+                    <span class="p-single__author" ><?php the_author(); ?></span>
+                    <span >-</span>
+                    <span class="p-single__data" ><?php echo get_the_date('d'); ?> <?php echo get_the_date('F'); ?> <?php echo get_the_date('Y'); ?></span>
+                </div>
+            </div>
+        <?php } ?>
+        <div class="p-single__content-latest" >
+            <div class="p-single__content" ><?php the_content() ?></div>
+        </div>
     </div>
-
-    <footer>
-        <!-- Add your footer content here -->
-    </footer>
-
-    <?php wp_footer(); ?>
-</body>
-</html>
+</main>
