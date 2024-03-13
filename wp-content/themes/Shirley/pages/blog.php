@@ -16,7 +16,7 @@ Template Name:Blog
 <body>
     <header>
     <div class="grid">
-			<div class="menu">
+			<div class="menu-blog">
 				<div class="logo">
 					<img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/logo.png" alt="Logo">
 				</div>

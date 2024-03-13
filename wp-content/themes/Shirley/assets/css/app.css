@@ -862,6 +862,38 @@ html.has-scroll-smooth {
   background: #c43c12;
 }
 
+.menu-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: uppercase;
+}
+.menu-blog .conteudo-menu {
+  display: flex;
+  column-gap: 20px;
+}
+.menu-blog .links {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.menu-blog .links a {
+  color: #ECDCC0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: Poppins;
+}
+.menu-blog .links .fa-star {
+  font-size: 14px;
+}
+.menu-blog .redes {
+  display: flex;
+  column-gap: 20px;
+  font-size: 24px;
+  color: #ECDCC0;
+}
+
 .banner-home {
   overflow: hidden;
 }
