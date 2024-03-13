@@ -2,15 +2,16 @@
 /*
 Template Name:Blog 
 */
-?>
-
+get_header(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Blog Page</title>
+    
     <?php wp_head(); ?>
+    
     <style>
         /* Add your custom CSS styles here */
     </style>
