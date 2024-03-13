@@ -2,7 +2,7 @@
 
 <section class="um" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo-projetos.png');background-repeat:no-repeat; background-size:cover;background-position:center;">
     <div class="grid">
-        <div class="projetos">
+        <div class="projetos" id="projetos">
             <div class="textos-projeto">
                 <div class="projetos-titulo">
                     <p>PROJETOS</p>
@@ -32,7 +32,7 @@
 
     </div>
 </section>
-<section class="dois" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo-sobre.png');background-repeat:no-repeat; background-size:cover; background-position:center;">
+<section class="dois" id="sobre" style="background-image:url('<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/fundo-sobre.png');background-repeat:no-repeat; background-size:cover; background-position:center;">
     <div class="grid">
         <div class="titulo-sobremim">
             <p>SOBRE MIM</p>
@@ -51,7 +51,7 @@
         </div>
     </div>
 </section>
-<section class="tres">
+<section class="tres" id="contato">
     <div class="grid">
 
         <div class="conteudo-contato">

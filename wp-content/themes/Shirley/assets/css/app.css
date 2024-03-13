@@ -832,6 +832,36 @@ html.has-scroll-smooth {
   justify-content: center;
 }
 
+.menu .links a:hover {
+  transition: 0.3s;
+  color: #DD90AE;
+}
+
+.fa-linkedin:hover {
+  transition: 0.3s;
+  color: #DD90AE;
+}
+
+.fa-instagram:hover {
+  transition: 0.3s;
+  color: #DD90AE;
+}
+
+.topico img:hover {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.botao-cv a:hover {
+  transition: 0.3s;
+  background: #e05a8f;
+}
+
+.wpcf7-submit:hover {
+  transition: 0.2s;
+  background: #c43c12;
+}
+
 .banner-home {
   overflow: hidden;
 }

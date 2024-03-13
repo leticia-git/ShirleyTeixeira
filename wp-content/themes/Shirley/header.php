@@ -43,11 +43,11 @@
 					<div class="links">
 						<a href="">HOME</a>
 						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="">PROJETOS</a>
+						<a href="#projetos">PROJETOS</a>
 						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="">SOBRE</a>
+						<a href="#sobre">SOBRE</a>
 						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="">CONTATO</a>
+						<a href="#contato">CONTATO</a>
 					</div>
 					<div class="redes">
 						<div class="rede">
