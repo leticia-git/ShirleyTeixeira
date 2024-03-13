@@ -16,7 +16,7 @@ Template Name:Blog
 <body>
     <header>
     <div class="grid">
-    <?php get_template_part('template/blog-menu'); ?>
+    <?php get_template_part('templates/blog-menu'); ?>
 		</div>
     </header>
     <section class="t-blog-highlights" >
