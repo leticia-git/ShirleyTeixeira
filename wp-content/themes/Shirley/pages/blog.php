@@ -1,8 +1,7 @@
 <?php
 /*
 Template Name:Blog 
-*/
-get_header(); ?>
+*/?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +11,7 @@ get_header(); ?>
     
     <?php wp_head(); ?>
     
-    <style>
-        /* Add your custom CSS styles here */
-    </style>
+    <link rel="stylesheet" href="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/css/app.css">
 </head>
 <body>
     <header>
