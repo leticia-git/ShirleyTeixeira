@@ -16,33 +16,52 @@ Template Name:Blog
 <body>
     <header>
     <div class="grid">
-			<div class="menu-blog">
-				<div class="logo">
-					<img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/logo.png" alt="Logo">
-				</div>
-				<div class="conteudo-menu">
-					<div class="links">
-						<a href="">HOME</a>
-						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="#projetos">PROJETOS</a>
-						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="#sobre">SOBRE</a>
-						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-						<a href="#contato">CONTATO</a>
-					</div>
-					<div class="redes">
-						<div class="rede">
-							<a href=""><i class="fa-brands fa-linkedin"></i></a>
-						</div>
-						<div class="rede">
-							<a href=""><i class="fa-brands fa-instagram"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
+    <?php get_template_part('template/blog-menu'); ?>
 		</div>
     </header>
-
+    <section class="t-blog-highlights" >
+    <div class="t-blog-highlights__grid" >
+        <div class="t-blog-highlights__swiper swiper js-blog-highlights" >
+            <div class="t-blog-highlights__wrapper swiper-wrapper" >
+                <?php
+                $stickies = get_option('sticky_posts');
+                $newsArgs = array(
+                    'post_type'         => 'post',
+                    'posts_per_page'    => -1,
+                    'post__in'          => $stickies,
+                );
+                $newsLoop = new WP_Query($newsArgs);
+                while ($newsLoop->have_posts()) : $newsLoop->the_post();
+                ?>
+                    <?php if (has_post_thumbnail()) { ?>
+                        <article class="t-blog-highlights__highlight swiper-slide" style="background-image: url('<?php the_post_thumbnail_url('thumbnail-blog-highlights') ?>')" >
+                        <?php } else { ?>
+                            <article class="t-blog-highlights__highlight swiper-slide" style="background-color: #00306A" >
+                            <?php } ?>
+                            <div class="t-blog-highlights__titles" >
+                                <h1 class="t-blog-highlights__title" ><?php the_title(); ?></h1>
+                            </div>
+                            <div class="t-blog-highlights__excerpt" ><?php the_excerpt(); ?></div>
+                            <a href="<?php the_permalink(); ?>" class="t-blog-highlights__button" >
+                                <span class="t-blog-highlights__button-text" >Leia mais</span>
+                                <i class="t-blog-highlights__button-icon fas fa-long-arrow-alt-right" ></i>
+                            </a>
+                            </article>
+                        <?php endwhile;
+                    wp_reset_query(); ?>
+            </div>
+            <div class="js-blog-highlights__swiper-pagination t-blog-highlights__swiper-pagination" ></div>
+            <div class="js-blog-highlights__arrows" >
+                <div class="js-blog-highlights__swiper-button-prev" >
+                    <i class="fas fa-chevron-left" ></i>
+                </div>
+                <div class="js-blog-highlights__swiper-button-next" >
+                    <i class="fas fa-chevron-right" ></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <section class="t-blog-listing" >
     <div class="t-blog-listing__grid" >
         <div class="t-blog-listing__posts" >
