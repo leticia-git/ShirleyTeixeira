@@ -1,8 +1,9 @@
-
+<?php 
+get_template_part('components/head'); ?>
 
 
 <main class="p-single">
-    <div class="p-single__grid" >
+    <div class="grid" >
         <?php if (has_post_thumbnail()) { ?>
             <div class="p-single__thumbnail swiper-slide" >
                 <div class="p-single__titles" >

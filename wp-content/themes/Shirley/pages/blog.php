@@ -8,7 +8,7 @@ Template Name:Blog
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Blog Page</title>
-    
+    <?php get_template_part('components/head'); ?>
     <?php wp_head(); ?>
     
     <link rel="stylesheet" href="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/css/app.css">
