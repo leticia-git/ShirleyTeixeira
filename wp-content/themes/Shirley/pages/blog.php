@@ -99,3 +99,5 @@ Template Name:Blog
             </div>
         </section>
       </div>
+
+      <?php get_footer(); ?>
