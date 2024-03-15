@@ -8,13 +8,13 @@ Template Name:Blog
 
     <?php get_template_part('components/head'); ?>
     <?php wp_head(); ?>
-    <body>
-        <header>
+    <header>
             <div class="grid">
                 <?php get_template_part('templates/blog-menu'); ?>
             </div>
         </header>
-      <div class="grid">
+<div class="conteudo-blog">
+<div class="grid">
         <main>
             <section class="blog-posts">
                 <div class="container">
@@ -48,6 +48,7 @@ Template Name:Blog
                 </div>
             </section>
         </main>
-      </div>
+    </div>
+</div>
 
 <?php get_footer(); ?>
