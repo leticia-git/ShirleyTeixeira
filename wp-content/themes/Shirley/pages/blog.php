@@ -15,84 +15,38 @@ Template Name:Blog
             </div>
         </header>
       <div class="grid">
-      <section class="t-blog-highlights">
-            <div class="t-blog-highlights__grid">
-                <div class="t-blog-highlights__swiper swiper js-blog-highlights">
-                    <div class="t-blog-highlights__wrapper swiper-wrapper">
-                        <?php
-                $stickies = get_option('sticky_posts');
-                $newsArgs = array(
-                    'post_type'         => 'post',
-                    'posts_per_page'    => -1,
-                    'post__in'          => $stickies,
-                );
-                $newsLoop = new WP_Query($newsArgs);
-                while ($newsLoop->have_posts()) : $newsLoop->the_post();
-                ?>
-                                <img src=" <?php the_thumbnail(); ?>" alt="">
-                    
-                                <div class="t-blog-highlights__titles">
-                                    <h1 class="t-blog-highlights__title"><?php the_title(); ?></h1>
-                                </div>
-                                <div class="t-blog-highlights__excerpt"><?php the_excerpt(); ?></div>
-                                <a href="<?php the_permalink(); ?>" class="t-blog-highlights__button">
-                                    <span class="t-blog-highlights__button-text">Leia mais</span>
-                                    <i class="t-blog-highlights__button-icon fas fa-long-arrow-alt-right"></i>
-                                </a>
-                            </article>
-                            <?php endwhile;
-                    wp_reset_query(); ?>
+      <main>
+    <section class="blog-posts">
+        <div class="container">
+            <?php
+            $args = array(
+                'post_type'      => 'post',
+                'posts_per_page' => -1, // Mostra todos os posts
+            );
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()) :
+                while ($query->have_posts()) :
+                    $query->the_post();
+            ?>
+                    <article>
+                        <div class="post-thumbnail">
+                            <?php the_post_thumbnail(); ?>
                         </div>
-                        <div
-                            class="js-blog-highlights__swiper-pagination t-blog-highlights__swiper-pagination"></div>
-                        <div class="js-blog-highlights__arrows">
-                            <div class="js-blog-highlights__swiper-button-prev">
-                                <i class="fas fa-chevron-left"></i>
-                            </div>
-                            <div class="js-blog-highlights__swiper-button-next">
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="t-blog-listing">
-            <div class="t-blog-listing__grid">
-                <div class="t-blog-listing__posts">
-                    <?php
-                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                $args = array(
-                    'post_type'         => 'post',
-                    'posts_per_page'    => 8,
-                    'paged'             => $paged,
-                );
-                $loop = new WP_Query($args);
-                if ($loop->have_posts()) {
-                    while ($loop->have_posts()) : $loop->the_post();
-                    endwhile;
-                    $total_pages = $loop->max_num_pages;
-                    if ($total_pages > 1) {
-                        $current_page = max(1, get_query_var('paged'));
-                        echo '<div class="t-blog-listing__paginate">';
-                        echo '<div class="t-blog-listing__paginate__grid">';
-                        echo paginate_links(array(
-                            'base' => get_pagenum_link(1) . '%_%',
-                            'format' => 'page/%#%',
-                            'current' => $current_page,
-                            'total' => $total_pages,
-                            'prev_text'    => (' <i class="t-blog-listing__paginate__prev">Anterior</i>'),
-                            'next_text'    => (' <i class="t-blog-listing__paginate__next">Próximo</i>'),
-                        ));
-                        echo '</div>';
-                        echo '</div>';
-                    }
-                }
+                        <h2><?php the_title(); ?></h2>
+                        <p><?php the_excerpt(); ?></p>
+                        <a href="<?php the_permalink(); ?>">Leia mais</a>
+                    </article>
+            <?php
+                endwhile;
                 wp_reset_postdata();
-                ?>
-                </div>
-            </div>
-        </section>
-      </div>
+            else :
+                echo "<p>Nenhum post encontrado.</p>";
+            endif;
+            ?>
+        </div>
+    </section>
+</main>
 
       <?php get_footer(); ?>
