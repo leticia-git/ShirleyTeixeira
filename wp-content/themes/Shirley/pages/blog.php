@@ -8,13 +8,13 @@ Template Name:Blog
 
     <?php get_template_part('components/head'); ?>
     <?php wp_head(); ?>
-    <header>
-            <div class="grid">
-                <?php get_template_part('templates/blog-menu'); ?>
-            </div>
-        </header>
-<div class="conteudo-blog">
-<div class="grid">
+
+        <div class="grid">
+            <?php get_template_part('templates/blog-menu'); ?>
+        </div>
+
+    <div class="conteudo-blog">
+    <div class="grid">
         <main>
             <section class="blog-posts">
                 <div class="container">
