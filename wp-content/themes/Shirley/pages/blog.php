@@ -35,9 +35,15 @@ Template Name:Blog
                                     <div class="post-thumbnail">
                                         <?php the_post_thumbnail(); ?>
                                     </div>
-                                    <h2><?php the_title(); ?></h2>
-                                    <p><?php the_excerpt(); ?></p>
-                                    <a href="<?php the_permalink(); ?>">Leia mais</a>
+                                    <div class="titulo-post">
+                                        <h2><?php the_title(); ?></h2>
+                                    </div>
+                                    <div class="resumo">
+                                        <p><?php the_excerpt(); ?></p>
+                                    </div>
+                                    <div class="leiamais">
+                                        <a href="<?php the_permalink(); ?>">Leia mais</a>
+                                    </div>
                                 </article>
                         <?php
                             endwhile;
