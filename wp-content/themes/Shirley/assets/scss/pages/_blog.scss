@@ -74,6 +74,12 @@
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-   
+    border-radius: 15px;
+    border: 3px solid #EEAD42;
 }
+}
+.wp-post-image {
+  width: 400px;
+height: 300px;
+object-fit: cover;
 }
