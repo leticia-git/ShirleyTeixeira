@@ -5,7 +5,7 @@ get_template_part('components/head'); ?>
 <main class="p-single">
     <div class="grid" >
         <?php if (has_post_thumbnail()) { ?>
-            <div class="p-single__thumbnail swiper-slide" >
+            <div class="p-single__thumbnail" >
                 <div class="p-single__titles" >
                     <h1 class="p-single__title" ><?php the_title(); ?></h1>
                 </div>
@@ -14,7 +14,7 @@ get_template_part('components/head'); ?>
                 </div>
             </div>
         <?php } else { ?>
-            <div class="p-single__thumbnail swiper-slide" >
+            <div class="p-single__thumbnail" >
                 <div class="p-single__titles" >
                     <h1 class="p-single__title" ><?php the_title(); ?></h1>
                     <span class="p-single__subtitle" ></span>
