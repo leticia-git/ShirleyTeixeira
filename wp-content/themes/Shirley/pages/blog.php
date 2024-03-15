@@ -29,13 +29,8 @@ Template Name:Blog
                 $newsLoop = new WP_Query($newsArgs);
                 while ($newsLoop->have_posts()) : $newsLoop->the_post();
                 ?>
-                        <?php if (has_post_thumbnail()) { ?>
-                        <article
-                            class="t-blog-highlights__highlight swiper-slide"
-                            style="background-image: url('<?php the_post_thumbnail_url('thumbnail-blog-highlights') ?>')">
-                        <?php } else { ?>
-                            <article class="t-blog-highlights__highlight swiper-slide">
-                                <?php } ?>
+                                <img src=" <?php the_thumbnail(); ?>" alt="">
+                    
                                 <div class="t-blog-highlights__titles">
                                     <h1 class="t-blog-highlights__title"><?php the_title(); ?></h1>
                                 </div>
