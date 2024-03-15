@@ -62,3 +62,8 @@ endif;
 add_action( 'wp_enqueue_scripts', 'twentytwentytwo_styles' );
 
 
+add_theme_support('post-thumbnails', array(
+	'post',
+	'page',
+	'custom-post-type-name',
+	));
