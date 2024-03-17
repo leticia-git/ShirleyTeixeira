@@ -6,13 +6,13 @@
     </div>
     <div class="conteudo-menu">
         <div class="links">
-            <a href="">HOME</a>
+            <a href="<?php echo home_url(); ?>/">HOME</a>
             <i class="fa-solid fa-star" style="color: #D65E23;"></i>
-            <a href="#projetos">PROJETOS</a>
+            <a href="<?php echo home_url(); ?>/projetos">PROJETOS</a>
             <i class="fa-solid fa-star" style="color: #D65E23;"></i>
-            <a href="#sobre">SOBRE</a>
+            <a href="<?php echo home_url(); ?>/sobre">SOBRE</a>
             <i class="fa-solid fa-star" style="color: #D65E23;"></i>
-            <a href="#contato">CONTATO</a>
+            <a href="<?php echo home_url(); ?>/contato">CONTATO</a>
         </div>
         <div class="redes">
             <div class="rede">
