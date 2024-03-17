@@ -15,7 +15,25 @@ Template Name:Blog
     </div>
 
     <div class="conteudo-blog">
+        <div class="tag-blog">
+        <img
+            src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/tag-blog.png"
+            alt="Blog">
+        </div>
         <div class="grid">
+        <div id="category-filter">
+    <ul>
+        <?php
+        // Get all categories
+        $categories = get_categories();
+
+        // Display each category as a link
+        foreach ($categories as $category) {
+            echo '<li><a href="#" data-category="' . $category->slug . '">' . $category->name . '</a></li>';
+        }
+        ?>
+    </ul>
+</div>
             <main>
                 <section class="blog-posts">
                     <div class="container">
@@ -58,5 +76,23 @@ Template Name:Blog
         </div>
     </div>
  </div>
+<script>
+    jQuery(document).ready(function($) {
+    $('#category-filter a').on('click', function(e) {
+        e.preventDefault();
 
+        var category = $(this).data('category');
+
+        // Hide all posts
+        $('.post').hide();
+
+        // Show only the posts in the selected category
+        if (category === 'all') {
+            $('.post').show();
+        } else {
+            $('.' + category).show();
+        }
+    });
+});
+</script>
 <?php get_footer(); ?>

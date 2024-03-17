@@ -943,6 +943,10 @@ html.has-scroll-smooth {
   object-fit: cover;
 }
 
+.fa-brands {
+  color: #E44F89;
+}
+
 .banner-home {
   overflow: hidden;
 }
