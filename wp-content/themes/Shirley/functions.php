@@ -67,3 +67,12 @@ add_theme_support('post-thumbnails', array(
 	'page',
 	'custom-post-type-name',
 	));
+
+	function enqueue_custom_scripts() {
+		// Enqueue jQuery from CDN
+		wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true);
+	
+		// Enqueue custom JavaScript file
+		wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/custom-script.js', array('jquery'), '1.0', true);
+	}
+	add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
