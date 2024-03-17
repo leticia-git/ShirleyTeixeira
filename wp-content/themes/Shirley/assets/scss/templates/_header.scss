@@ -106,6 +106,9 @@ h2 {
   .menu-responsivo {
       display: flex;
       align-items: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
   }
 
   .itens-menu {
@@ -135,4 +138,40 @@ h2 {
       display: none;
     }
   }
+}
+
+.menu{
+  position: relative;
+  
+.menu-responsivo {
+  .hamburguer {
+  .barra{
+  background-color: #fff;
+  
+}
+}
+  .itens-menu{
+      position: absolute;
+      background: #C55026;
+      max-width: 150px;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      width: 100%;
+      top: 60px;
+      right: 0px;
+      a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  }
+  }
+  .redes{
+      justify-content: center;
+      
+  }
+}
+}
+
+html{
+  margin-top: 0px!important;
 }

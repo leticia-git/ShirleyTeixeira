@@ -1440,6 +1440,9 @@ header {
   .menu-responsivo {
     display: flex;
     align-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .itens-menu {
     display: none;
@@ -1464,6 +1467,35 @@ header {
     display: none;
   }
 }
+.menu {
+  position: relative;
+}
+.menu .menu-responsivo .hamburguer .barra {
+  background-color: #fff;
+}
+.menu .menu-responsivo .itens-menu {
+  position: absolute;
+  background: #C55026;
+  max-width: 150px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  width: 100%;
+  top: 60px;
+  right: 0px;
+}
+.menu .menu-responsivo .itens-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.menu .menu-responsivo .redes {
+  justify-content: center;
+}
+
+html {
+  margin-top: 0px !important;
+}
+
 footer {
   padding: 50px 0;
 }
