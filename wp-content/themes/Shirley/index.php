@@ -13,7 +13,7 @@
             </div>
             <div class="topicos-projetos">
                 <div class="topico">
-                <a href="">
+                <a href="<?php echo home_url(); ?>/blog">
                     <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/blog.png" alt="">
                 </a>
                 </div>

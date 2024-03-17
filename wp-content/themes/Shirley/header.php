@@ -14,7 +14,7 @@ get_template_part('components/head'); ?>
 				</div>
 				<div class="conteudo-menu">
 					<div class="links">
-						<a href="">HOME</a>
+						<a href="#">HOME</a>
 						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
 						<a href="#projetos">PROJETOS</a>
 						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
@@ -24,10 +24,10 @@ get_template_part('components/head'); ?>
 					</div>
 					<div class="redes">
 						<div class="rede">
-							<a href=""><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://www.linkedin.com/in/shirley-teixeira/"><i class="fa-brands fa-linkedin"></i></a>
 						</div>
 						<div class="rede">
-							<a href=""><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.instagram.com/tshiir/"><i class="fa-brands fa-instagram"></i></a>
 						</div>
 					</div>
 				</div>
