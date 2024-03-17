@@ -862,6 +862,81 @@ html.has-scroll-smooth {
   background: #c43c12;
 }
 
+@media (max-width: 991px) {
+  .itens-menu a:nth-child(even) {
+    background-color: #C55836; /* Cor de fundo para itens pares */
+  }
+  header {
+    padding-bottom: 50px;
+  }
+  .banner {
+    margin-top: 50px;
+  }
+  .banner h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+  .banner h2 {
+    font-size: 24px;
+  }
+  .topicos-projetos {
+    display: flex;
+    column-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topicos-projetos .topico {
+    margin: 20px 0;
+  }
+  .topicos-projetos .topico img {
+    width: 100%;
+  }
+  .projetos {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .dois {
+    padding: 20px;
+  }
+  .texto-sobre p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .conteudo-sobre {
+    flex-direction: column;
+  }
+  .foto img {
+    width: 100%;
+  }
+  .conteudo-contato {
+    flex-direction: column;
+  }
+  .conteudo-contato .form {
+    width: 100%;
+  }
+  .botao-cv {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .botao-cv a {
+    width: 100%;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .flores img {
+    width: 100%;
+  }
+  .tres {
+    padding: 20px 20px;
+  }
+  .titulo-contato p {
+    font-size: 20px;
+  }
+  .tres .contato .titulo-contato p {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
 .menu-blog {
   display: flex;
   justify-content: space-between;
