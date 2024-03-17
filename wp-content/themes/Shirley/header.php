@@ -42,6 +42,10 @@ get_template_part('components/head'); ?>
 							<a href="<?php echo home_url(); ?>/projetos">PROJETOS</a>
 							<a href="<?php echo home_url(); ?>/sobre">SOBRE</a>
 							<a href="<?php echo home_url(); ?>/contato">CONTATO</a>
+							<div class="redes">
+							<a href="https://www.linkedin.com/in/shirley-teixeira/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/tshiir/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+							</div>
 						</div>
 				</div>
 				
