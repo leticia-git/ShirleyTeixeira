@@ -867,10 +867,10 @@ html.has-scroll-smooth {
     background-color: #C55836; /* Cor de fundo para itens pares */
   }
   header {
-    padding-bottom: 50px;
+    padding-bottom: 50px !important;
   }
   .banner {
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
   .banner h1 {
     font-size: 40px;
