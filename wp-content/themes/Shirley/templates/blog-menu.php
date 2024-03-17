@@ -16,12 +16,12 @@
         </div>
         <div class="redes">
             <div class="rede">
-                <a href="">
+                <a href="https://www.linkedin.com/in/shirley-teixeira/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
             <div class="rede">
-                <a href="">
+                <a href="https://www.instagram.com/tshiir/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
