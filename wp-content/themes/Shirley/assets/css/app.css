@@ -903,6 +903,8 @@ html.has-scroll-smooth {
 
 .conteudo-blog .grid .blog-posts .container {
   display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
 }
 
 .container article {
