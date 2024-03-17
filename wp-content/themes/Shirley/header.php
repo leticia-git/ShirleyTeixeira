@@ -43,7 +43,8 @@ get_template_part('components/head'); ?>
 							<a href="<?php echo home_url(); ?>/sobre">SOBRE</a>
 							<a href="<?php echo home_url(); ?>/contato">CONTATO</a>
 						</div>
-					</div>
+				</div>
+				
 			</div>
 		</div>
 		<div class="grid">

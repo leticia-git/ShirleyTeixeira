@@ -1460,7 +1460,7 @@ header {
   }
 }
 @media (max-width: 991px) {
-  .conteudo-menu {
+  .menu .conteudo-menu {
     display: none;
   }
 }

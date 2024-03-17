@@ -130,7 +130,9 @@ h2 {
 }
 
 @media(max-width:991px){
-  .conteudo-menu{
-    display: none;
+  .menu {
+    .conteudo-menu{
+      display: none;
+    }
   }
 }
