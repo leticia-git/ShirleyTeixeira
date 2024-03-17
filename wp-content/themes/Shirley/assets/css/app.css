@@ -1408,8 +1408,7 @@ header {
 }
 
 .menu-responsivo {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .hamburguer {
@@ -1428,17 +1427,36 @@ header {
 }
 
 .itens-menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
-  .itens-menu {
+.itens-menu a {
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .menu-responsivo {
     display: flex;
+    align-items: center;
+  }
+  .itens-menu {
+    display: none;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
   .itens-menu a {
     padding: 10px;
-    text-align: center;
+  }
+  .hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
   }
 }
 footer {
