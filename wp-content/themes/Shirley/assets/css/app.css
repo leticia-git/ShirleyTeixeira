@@ -948,6 +948,10 @@ html.has-scroll-smooth {
   object-fit: cover;
 }
 
+.tag-blog {
+  margin: 60px 0;
+}
+
 .banner-home {
   overflow: hidden;
 }
