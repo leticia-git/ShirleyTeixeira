@@ -128,3 +128,9 @@ h2 {
       cursor: pointer;
   }
 }
+
+@media(max-width:991px){
+  .conteudo-menu{
+    display: none;
+  }
+}

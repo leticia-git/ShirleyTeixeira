@@ -13,7 +13,25 @@ get_template_part('components/head'); ?>
 					<img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/logo.png" alt="Logo">
 				</div>
 				<div class="conteudo-menu">
-					<div class="menu-responsivo">
+					<div class="links">
+						<a href="<?php echo home_url(); ?>/">HOME</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						<a href="<?php echo home_url(); ?>/projetos">PROJETOS</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						<a href="<?php echo home_url(); ?>/sobre">SOBRE</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						<a href="<?php echo home_url(); ?>/contato">CONTATO</a>
+					</div>
+					<div class="redes">
+						<div class="rede">
+							<a href="https://www.linkedin.com/in/shirley-teixeira/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						</div>
+						<div class="rede">
+							<a href="https://www.instagram.com/tshiir/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="menu-responsivo">
 						<div class="hamburguer" onclick="toggleMenu()">
 							<div class="barra"></div>
 							<div class="barra"></div>
@@ -26,7 +44,6 @@ get_template_part('components/head'); ?>
 							<a href="<?php echo home_url(); ?>/contato">CONTATO</a>
 						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 		<div class="grid">
@@ -36,10 +53,9 @@ get_template_part('components/head'); ?>
 			</div>
 		</div>
 	</header>
-	
 	<script>
 		function toggleMenu() {
     var menu = document.querySelector('.itens-menu');
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-		}
+}
 	</script>
