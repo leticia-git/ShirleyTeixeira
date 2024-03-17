@@ -17,7 +17,7 @@ Template Name:Blog
     <div class="conteudo-blog">
         <div class="tag-blog">
         <img
-            src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/tag-blog.png"
+            src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/blog-tag.png"
             alt="Blog">
         </div>
         <div class="grid">
@@ -77,7 +77,7 @@ Template Name:Blog
     </div>
  </div>
 <script>
-    jQuery(document).ready(function($) {
+    $(document).ready(function($) {
     $('#category-filter a').on('click', function(e) {
         e.preventDefault();
 

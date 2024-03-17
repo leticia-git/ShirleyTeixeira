@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: uppercase;
+    .fa-brands {
+      color: #E44F89
+    }
     .conteudo-menu{
       display: flex;
       column-gap: 20px;
@@ -82,7 +85,4 @@
   width: 400px;
 height: 300px;
 object-fit: cover;
-}
-.fa-brands {
-  color: #E44F89
 }

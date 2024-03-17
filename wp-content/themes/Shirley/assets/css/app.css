@@ -868,6 +868,9 @@ html.has-scroll-smooth {
   align-items: center;
   text-decoration: uppercase;
 }
+.menu-blog .fa-brands {
+  color: #E44F89;
+}
 .menu-blog .conteudo-menu {
   display: flex;
   column-gap: 20px;
@@ -941,10 +944,6 @@ html.has-scroll-smooth {
   width: 400px;
   height: 300px;
   object-fit: cover;
-}
-
-.fa-brands {
-  color: #E44F89;
 }
 
 .banner-home {
