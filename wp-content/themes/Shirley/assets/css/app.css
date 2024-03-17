@@ -949,7 +949,18 @@ html.has-scroll-smooth {
 }
 
 .tag-blog {
-  margin: 60px 0;
+  margin: 60px 0 40px 0;
+}
+
+.titulo-posts {
+  display: flex;
+  margin-bottom: 25px;
+}
+.titulo-posts p {
+  color: #355C3C;
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 20px;
 }
 
 .banner-home {
