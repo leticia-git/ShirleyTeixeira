@@ -40,10 +40,10 @@ Template Name:Blog
                             ?>
                                     <article>
                                         <div class="post-thumbnail">
-                                            <?php the_post_thumbnail(); ?>
+                                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                                         </div>
                                         <div class="titulo-post">
-                                            <h2><?php the_title(); ?></h2>
+                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                         </div>
                                         <div class="resumo">
                                             <p><?php the_excerpt(); ?></p>
