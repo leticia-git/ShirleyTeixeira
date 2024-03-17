@@ -968,6 +968,29 @@ html.has-scroll-smooth {
   margin-right: 20px;
 }
 
+.single {
+  background: #FAEDD6;
+}
+.single .p-single__title {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-bottom: 30px;
+}
+.single .post-thumbnail {
+  margin-bottom: 30px;
+}
+.single .wp-post-image {
+  width: 100%;
+  align-content: top;
+  object-fit: cover;
+  object-position: top;
+}
+
+.p-single .grid {
+  padding-bottom: 100px;
+}
+
 .banner-home {
   overflow: hidden;
 }
