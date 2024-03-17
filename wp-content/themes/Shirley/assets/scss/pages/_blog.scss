@@ -58,7 +58,8 @@
     width: 100%;
         height: auto;
 }
-.titulo-post{
+.titulo-post a{
+  text-decoration: none;
     h2 {
     font-size: 24px;
      margin: 15px 0;
