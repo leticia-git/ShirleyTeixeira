@@ -920,8 +920,9 @@ html.has-scroll-smooth {
 
 .titulo-post a {
   text-decoration: none;
-}
-.titulo-post a h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
   font-size: 24px;
   margin: 15px 0;
   font-weight: bold;
