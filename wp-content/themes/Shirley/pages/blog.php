@@ -77,7 +77,7 @@ Template Name:Blog
     </div>
  </div>
 <script>
-    $(document).ready(function($) {
+jQuery(document).ready(function($) {
     $('#category-filter a').on('click', function(e) {
         e.preventDefault();
 
