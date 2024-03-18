@@ -1043,6 +1043,20 @@ html.has-scroll-smooth {
   margin-right: 20px;
 }
 
+@media (max-width: 991px) {
+  .conteudo-blog .grid .blog-posts .container {
+    flex-direction: column;
+  }
+  .container article {
+    width: 100%;
+  }
+  .wp-post-image {
+    width: 100%;
+  }
+  .tag-blog {
+    width: 100%;
+  }
+}
 .single {
   background: #FAEDD6;
 }
