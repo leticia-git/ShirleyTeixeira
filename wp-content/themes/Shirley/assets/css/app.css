@@ -1556,6 +1556,11 @@ header {
     display: none;
   }
 }
+@media (max-width: 991px) {
+  .menu-blog .conteudo-menu {
+    display: none;
+  }
+}
 .menu {
   position: relative;
 }
@@ -1578,6 +1583,31 @@ header {
   font-weight: 600;
 }
 .menu .menu-responsivo .redes {
+  justify-content: center;
+}
+
+.menu-blog {
+  position: relative;
+}
+.menu-blog .menu-responsivo .hamburguer .barra {
+  background-color: #fff;
+}
+.menu-blog .menu-responsivo .itens-menu {
+  position: absolute;
+  background: #C55026;
+  max-width: 150px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  width: 100%;
+  top: 60px;
+  right: 0px;
+}
+.menu-blog .menu-responsivo .itens-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.menu-blog .menu-responsivo .redes {
   justify-content: center;
 }
 
