@@ -1590,7 +1590,7 @@ header {
   position: relative;
 }
 .menu-blog .menu-responsivo .hamburguer .barra {
-  background-color: #fff;
+  background-color: #C55026;
 }
 .menu-blog .menu-responsivo .itens-menu {
   position: absolute;
@@ -1609,6 +1609,9 @@ header {
 }
 .menu-blog .menu-responsivo .redes {
   justify-content: center;
+}
+.menu-blog .menu-blog .fa-brands {
+  color: #fff;
 }
 
 html {
