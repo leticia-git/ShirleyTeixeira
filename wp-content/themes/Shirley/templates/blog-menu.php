@@ -50,3 +50,9 @@
     </div>
 
 </div>
+<script>
+		function toggleMenu() {
+    var menu = document.querySelector('.itens-menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
+	</script>
