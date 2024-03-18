@@ -75,7 +75,7 @@
                     <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/flores.png" alt="">
                 </div>
                 <div class="botao-cv">
-                    <a href="">
+                    <a href="https://shirleyteixeira.com.br/Downloads/Shirley_Teixeira_da_Silva.pdf" download>
                     <i class="fa-solid fa-star" style="color: #fff;"></i>
                     BAIXE MEU CV
                     <i class="fa-solid fa-star" style="color: #fff;"></i>
