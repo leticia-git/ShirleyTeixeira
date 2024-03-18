@@ -1,3 +1,6 @@
+<?php 
+get_template_part('components/head'); ?>
+
 <div class="menu-blog">
     <div class="logo">
         <img
