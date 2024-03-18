@@ -1560,6 +1560,9 @@ header {
   .menu-blog .conteudo-menu {
     display: none;
   }
+  .menu-blog .fa-brands {
+    color: #fff !important;
+  }
 }
 .menu {
   position: relative;
@@ -1609,9 +1612,6 @@ header {
 }
 .menu-blog .menu-responsivo .redes {
   justify-content: center;
-}
-.menu-blog .menu-blog .fa-brands {
-  color: #fff;
 }
 
 html {
