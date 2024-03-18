@@ -11,7 +11,7 @@ Template Name:Blog
 
     <div class="blog">
         <div class="grid">
-                <?php get_template_part('templates/blog-menu'); ?>
+                <?php get_template_part('templates/menu-blog'); ?>
         </div>
 
         <div class="conteudo-blog">
