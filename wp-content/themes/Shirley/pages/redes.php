@@ -6,12 +6,18 @@ Template Name:Redes
 <?php get_template_part('components/head'); ?>
 <?php wp_head(); ?>
 <style>
-    .carousel-container {
+.carousel-container {
     width: 1080px;
     margin: 50px auto;
     overflow: hidden;
 }
-
+@media(max-width:991px){
+    .carousel-container {
+    width: 100%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+}
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
