@@ -17,13 +17,13 @@
                     <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/blog.png" alt="">
                 </a>
                 </div>
-                <div class="topico">
+                <!-- <div class="topico">
                 <a href="">
                     <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/newss.png" alt="">
                 </a>
-                </div>
+                </div> -->
                 <div class="topico">
-                <a href="">
+                <a href="<?php echo home_url(); ?>/redes">
                     <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/redes.png" alt="">
                 </a>
                 </div>
