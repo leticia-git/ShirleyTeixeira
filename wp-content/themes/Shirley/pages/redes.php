@@ -13,7 +13,7 @@ Template Name:Redes
 }
 @media(max-width:991px){
     .carousel-container {
-    width: 100%;
+    width: 100%!important;
     margin: 50px auto;
     overflow: hidden;
 }
