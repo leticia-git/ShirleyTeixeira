@@ -46,6 +46,10 @@ Template Name:Redes
 .carousel-controls button:hover {
     background-color: #1e87e5;
 }
+.redes-sociais {
+    background: #FAEDD6;padding-bottom: 50px;
+}
+
 </style>
 <div class="redes-sociais">
             <div class="grid">
@@ -66,7 +70,7 @@ Template Name:Redes
                     <div class="carousel-item"><img src="https://shirleyteixeira.com.br/wp-content/uploads/2024/03/7.png" alt=""></div>
                     <div class="carousel-item"><img src="https://shirleyteixeira.com.br/wp-content/uploads/2024/03/8.png" alt=""></div>
                     <div class="carousel-item"><img src="https://shirleyteixeira.com.br/wp-content/uploads/2024/03/9.png" alt=""></div>
-                    <div class="carousel-item"><img src="https://shirleyteixeira.com.br/wp-content/uploads/2024/03/10.png" alt=""></div>
+                    <div class="carousel-item"><img src="https://shirleyteixeira.com.br/wp-content/uploads/2024/03/Slice-10.png" alt=""></div>
                 </div>
             </div>
 
