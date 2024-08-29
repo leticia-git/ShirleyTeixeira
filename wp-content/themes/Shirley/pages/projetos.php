@@ -57,7 +57,7 @@ Template Name:Projetos
         padding-bottom: 50px;
     }
 </style>
-<div class="projetos">
+<div class="projetos-pagina">
     <div class="grid">
         <?php get_template_part('templates/menu-blog'); ?>
     </div>
