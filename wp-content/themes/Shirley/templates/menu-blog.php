@@ -8,15 +8,19 @@ get_template_part('components/head'); ?>
             alt="Logo">
     </div>
     <div class="conteudo-menu">
-        <div class="links">
-            <a href="<?php echo home_url(); ?>/">HOME</a>
-            <i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-            <a href="<?php echo home_url(); ?>/projetos">PROJETOS</a>
-            <i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-            <a href="<?php echo home_url(); ?>/sobre">SOBRE</a>
-            <i class="fa-solid fa-star" style="color: #DD90AE;"></i>
-            <a href="<?php echo home_url(); ?>/contato">CONTATO</a>
-        </div>
+    <div class="links">
+						<a href="<?php echo home_url(); ?>/">HOME</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						<a href="<?php echo home_url(); ?>/projetos">PROJETOS</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						<a href="#sobre">SOBRE</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+						
+						<a href="<?php echo home_url(); ?>/blog">BLOG</a>
+						<i class="fa-solid fa-star" style="color: #DD90AE;"></i>
+
+						<a href="<?php echo home_url(); ?>/contato">CONTATO</a>
+					</div>
         <div class="redes">
             <div class="rede">
                 <a href="https://www.linkedin.com/in/shirley-teixeira/" target="_blank">
