@@ -68,7 +68,7 @@
                             <a href="tel:+5511962538168">(11) 96253-8168</a>
                         </div>
                         <div class="email">
-                            <a href="mailto:shiteixeiras@gmail.com">shiteixeiras@gmail.com</a>
+                            <a href="mailto:shirley.teixeira934@gmail.com">shirley.teixeira934@gmail.com</a>
                         </div>
                 </div>
                 <div class="flores">
