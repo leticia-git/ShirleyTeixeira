@@ -56,6 +56,9 @@ Template Name:Projetos
         background: #FAEDD6;
         padding-bottom: 50px;
     }
+    .projetos-pagina {
+    margin-bottom: 100px;
+}
 </style>
 <div class="projetos-pagina">
     <div class="grid">
