@@ -62,9 +62,7 @@ Template Name:Projetos
         <?php get_template_part('templates/menu-blog'); ?>
     </div>
     <div class="tag-blog">
-        <img
-            src="https://shirleyteixeira.com.br/wp-content/uploads/2024/03/projetos-tag"
-            alt="Projetos">
+    <img src="<?php echo home_url(); ?>/wp-content/themes/Shirley/assets/images/projetos-tag.png" alt="Projetos">
     </div>
 
     <div class="carousel-container">
